@@ -8,6 +8,7 @@ import { getAllQuotes } from '../lib/api';
 
 const AllQuote = () => {
   const { sendRequest, status, data: loadedQuotes, error } = useHttp(getAllQuotes, true);
+  console.log('AllQuote RUNNING', status);
 
   useEffect(() => {
     sendRequest();

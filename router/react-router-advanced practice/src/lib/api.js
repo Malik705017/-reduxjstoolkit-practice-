@@ -1,4 +1,5 @@
-const FIREBASE_DOMAIN = ''; /* place your firebase realtime url */
+const FIREBASE_DOMAIN =
+  'https://react-create-myburger-879bb-default-rtdb.firebaseio.com'; /* place your firebase realtime url */
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);

@@ -8,6 +8,7 @@ import { addQuote } from '../lib/api';
 const NewQuote = () => {
   const { sendRequest, status } = useHttp(addQuote);
   const history = useHistory();
+  console.log('NewQuote RUNNING');
 
   useEffect(() => {
     if (status === 'completed') {
